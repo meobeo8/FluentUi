@@ -6,11 +6,10 @@ local InterfaceManager = {} do
         Theme = "Darker",
         Acrylic = true,
         Transparency = true,
-        MenuKeybind = "Enum.KeyCode.F15"
     }
 
     function InterfaceManager:SetFolder(folder)
-		self.Folder = folder;
+		self.Folder = folder
 		self:BuildFolderTree()
 	end
 
@@ -101,6 +100,7 @@ local InterfaceManager = {} do
                 InterfaceManager:SaveSettings()
 			end
 		})
-	
+
+	end
 
 return InterfaceManager
