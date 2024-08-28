@@ -39,7 +39,7 @@ UICorner.Parent = ImageButton
 
 TextLabel.Parent = ScreenGui
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BackgroundTransparency = 0.5
+TextLabel.BackgroundTransparency = 0.3
 TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.120833337, 0, 0.0602890813, 0)
 TextLabel.Size = UDim2.new(0, 250, 0, 25)
