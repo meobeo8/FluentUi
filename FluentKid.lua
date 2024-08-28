@@ -29,7 +29,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.1152890813, 0)
 ImageButton.Size = UDim2.new(0, 47, 0, 47)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=15034250264"
+ImageButton.Image = "http://www.roblox.com/asset/?id=137811068969636"
 ImageButton.MouseButton1Down:connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.F15,false,game)
     game:GetService("VirtualInputManager"):SendKeyEvent(false,Enum.KeyCode.F15,true,game)
@@ -43,11 +43,22 @@ TextLabel.BackgroundTransparency = 0.5
 TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.120833337, 0, 0.0602890813, 0)
 TextLabel.Size = UDim2.new(0, 250, 0, 25)
-TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Font = Enum.Font.FredokaOne
 TextLabel.Text = "ELGATO TIME"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 12
 TextLabel.TextWrapped = true
+
+local TextLabel_Gradient = Instance.new("UIGradient")
+TextLabel_Gradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(26, 41, 255)),
+    ColorSequenceKeypoint.new(0.146805, Color3.fromRGB(235, 236, 255)),
+    ColorSequenceKeypoint.new(0.376511, Color3.fromRGB(38, 52, 255)),
+    ColorSequenceKeypoint.new(0.734024, Color3.fromRGB(255, 255, 255)),
+    ColorSequenceKeypoint.new(0.849741, Color3.fromRGB(220, 222, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+TextLabel_Gradient.Parent = TextLabel
 
 spawn(function()
     local startTime = tick()
