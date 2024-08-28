@@ -24,6 +24,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 UILock = true
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BackgroundTransparency = 1
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.1152890813, 0)
 ImageButton.Size = UDim2.new(0, 47, 0, 47)
