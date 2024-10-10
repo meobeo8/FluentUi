@@ -16,9 +16,14 @@ spawn(function()
     end
 end)
 
-for _, v in ipairs(game.CoreGui:GetChildren()) do
-    if v.Name == "ELGATO HUB ON/OFF" or v.Name == "ScreenGui" or v.Name == "ELGATO TIME" then
+for _, v in ipairs(game:GetService("CoreGui"):GetChildren()) do
+    if v.Name == "ELGATO HUB ON/OFF" or v.Name == "ELGATO TIME" then
         v:Destroy()
+    elseif v:IsA("ScreenGui") then
+        local frame = v:FindFirstChild("Frame")
+        if frame and frame:FindFirstChild("UIListLayout") then
+            v:Destroy()
+        end
     end
 end
 
